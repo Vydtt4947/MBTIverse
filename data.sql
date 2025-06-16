@@ -67,7 +67,7 @@ CREATE TABLE user_answers (
     id INT AUTO_INCREMENT PRIMARY KEY,
     result_id INT NOT NULL,
     question_id INT NOT NULL,
-    selected_score INT CHECK (selected_score BETWEEN -3 AND 3),  -- người dùng chọn từ 1 đến 7
+    selected_score INT CHECK (selected_score BETWEEN -3 AND 3),  
     FOREIGN KEY (result_id) REFERENCES results(id) ON DELETE CASCADE,
     FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE
 );
