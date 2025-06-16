@@ -1,7 +1,74 @@
-.hero-section {
-  background-color: #57abd5;
+.navbar {
   color: white;
-  padding: 120px 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex; 
+  list-style: none; 
+  gap: 20px;
+}
+
+.nav-links li a {
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-secondary a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.btn-secondary a:hover {
+  color: #8093f1;
+}
+.nav-links li a:hover {
+  color: #8093f1;
+}
+
+/* Responsive: co giãn khi màn hình nhỏ */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .nav-links li a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+  }
+  .btn-secondary {
+    font-size: 10px;
+    text-decoration: none; 
+    font-weight: bold;
+  }
+}
+.hero-section {
+  background-color: #79b8f4;
+  color: white;
+  padding: 60px 20px 60px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -25,9 +92,50 @@
   line-height: 1.5;
 }
 
+
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #79b8f4;
+  padding: 30px 0;
+  position: relative;
+}
+
+.marquee-boxes {
+  display: inline-flex;
+  animation: scroll-boxes 20s linear infinite;
+}
+
+.box {
+  flex: 0 0 300px;
+  margin: 0 20px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  color: #333;
+  text-decoration: none;
+}
+
+.box img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@keyframes scroll-boxes {
+  /* 0% {
+    transform: translateX(100%); /
+  } */
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .btn-cta {
   display: inline-block;
-  background-color: #9466cc;
+  background-color: #72ddf7;
   color: white;
   padding: 16px 32px;
   border-radius: 30px;
@@ -40,5 +148,3 @@
 .btn-cta:hover {
   background-color: #9466cc;
 }
-
-
