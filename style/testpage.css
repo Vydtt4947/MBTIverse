@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #f8f8f8;
     color: #333;
+    background: radial-gradient(circle at top left, #ffffff, #e3f2fd);
   }
   
   header {
@@ -16,6 +17,8 @@ body {
   header h1 {
     margin: 0;
     font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
   }
   
   header p {
@@ -64,7 +67,7 @@ body {
     color: #2a9d8f;
   }
   
-  .question-container {
+  .question-box {
     text-align: center;
     margin: 70px 0;
   }
@@ -136,4 +139,60 @@ body {
   .neutral {
     border-color: #999;
   }
+  .submit-container {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .submit-btn {
+    background-color: #57abd5;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background-color: #449ac1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .submit-btn:active {
+    transform: scale(0.97);
+  }
+  /* Section giới thiệu hoặc đầu trang */
+.intro-section {
+  background: linear-gradient(to right, #e0f7fa, #f1f8ff);
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Thẻ chức năng (đã có sẵn class .cards nhưng thêm style này cho rõ ràng hơn) */
+.cards {
+  background: #ffffff;
+  padding: 60px 20px;
+  margin-top: 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+/* Khung bài trắc nghiệm */
+.question-box {
+  background: #fefefe;
+  padding: 60px 30px;
+  margin: 60px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+}
+
+
+
   
