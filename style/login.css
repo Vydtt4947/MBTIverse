@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #57abd5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #9466cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #9466cc;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-primary.large {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #9466cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #9466cc;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-primary.large {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #9466cc;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+}
+
+.menu-links {
+    display: flex;
+    gap: 25px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+}
+
+.menu-links a.active {
+    color: #4a63e7;
+}
+
+.join-btn a {
+    background-color: #4a63e7;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* dang nhap */
+.main {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa ngang */
+    align-items: center;
+    /* Căn giữa dọc */
+    padding-top: 150px;
+    /* chừa khoảng cho menu cố định */
+}
+
+.container {
+    text-align: center;
+    width: 400px;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-buttons {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.toggle-buttons button {
+    flex: 1;
+    padding: 10px;
+    background-color: #e0f2f1;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.toggle-buttons button.active {
+    background-color: #49bbbd;
+    color: white;
+}
+
+.form.active {
+    display: block;
+}
+
+.form label {
+    text-align: left;
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline-color: #49bbbd;
+    /* Khi focus sẽ viền xanh */
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 14px;
+    justify-content: space-between;
+    /*xem giải thích tại sano nó qua bên trái*/
+}
+
+.form-actions a {
+    color: #49bbbd;
+}
+
+.submit-btn {
+    width: 200px;
+    padding: 12px;
+    background-color: #49bbbd;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
