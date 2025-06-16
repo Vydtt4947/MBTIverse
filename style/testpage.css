@@ -1,0 +1,139 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  header {
+    background-color: #57abd5;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  header p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -20px;
+    padding: 40px 20px;
+    background-color: white;
+  }
+  
+  .card {
+    background-color: #f0f4f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .icon {
+    font-size: 40px;
+    color: #2a9d8f;
+  }
+  
+  .question-container {
+    text-align: center;
+    margin: 70px 0;
+  }
+  
+  .question-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #6e6b6b;
+    margin-bottom: 20px;
+  }
+  
+  .choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .agree {
+    color: #4CAF50;
+    margin-right: 10px;
+  }
+  
+  .disagree {
+    color: #9C27B0;
+    margin-left: 10px;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    border: 3px solid;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .circle:hover {
+    transform: scale(1.1);
+  }
+  
+  .circle-small {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .circle-medium {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .circle-large {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .green {
+    border-color: #4CAF50;
+  }
+  
+  .purple {
+    border-color: #9C27B0;
+  }
+  
+  .neutral {
+    border-color: #999;
+  }
+  
